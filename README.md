@@ -28,7 +28,7 @@ vim ~/.bashrc
 #  Reload profile
 source ~/.bashrc
 
-#  Installgit
+#  Install git
 sudo apt install git
 mkdir workspace
 cd workspace
