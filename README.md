@@ -16,7 +16,7 @@ p2.xlarge (https://aws.amazon.com/ec2/instance-types/p2/)
 
 Create the EC2 instance on AWS and save the private key that they provide.
 SSH onto the instance and run the following commands
-
+<pre><code>
 // Install Anaconda 2
 wget https://repo.continuum.io/archive/Anaconda2-5.0.1-Linux-x86_64.sh
 ./Anaconda2-5.0.1-Linux-x86_64.sh
@@ -58,11 +58,13 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mycert.pem -out
 
 vim ~/.jupyter/jupyter_notebook_config.py
 // Paste the following
+
 c = get_config()
 c.IPKernelApp.pylab = 'inline' 
 c.NotebookApp.certfile = u'/home/ubuntu/certs/mycert.pem' 
 c.NotebookApp.ip = '*' 
 c.NotebookApp.open_browser = False
+
 // Save and exit
 
 // Almost there, edit the ssh config to avoid timeouts 
@@ -76,3 +78,4 @@ ServerAliveInterval 60
 jupyter notebook MachineLearningNanodegreeCaptstone-FoodClassifier.ipynb
 // Open the URL Firefox and add exception, then enter your password
 https://[YOUR EC2 DNS]:8888
+</pre></code>
