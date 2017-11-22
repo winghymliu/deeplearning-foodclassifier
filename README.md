@@ -8,9 +8,12 @@ Currently there are over 170,000,000 food photos on social media sites but searc
 
 The experiments ran on AWS with the following specifications:
 
-Deep Learning AMI with Conda (Ubuntu) (ami-1812bb61)
-p2.xlarge (https://aws.amazon.com/ec2/instance-types/p2/) 
-1 GPU, i7 4 Cores, 61 GB RAM, 100GB EBS Volume
+* Deep Learning AMI with Conda (Ubuntu) (ami-1812bb61)
+* p2.xlarge (https://aws.amazon.com/ec2/instance-types/p2/) 
+  * 1 GPU
+  * i7 4 Cores
+  * 61 GB RAM
+  * 100GB EBS Volume
 
 ### Instructions
 
