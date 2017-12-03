@@ -46,6 +46,7 @@ conda env create -f requirements/food-classifier-linux.yml
 source activate food-classifier
 KERAS_BACKEND=tensorflow python -c "from keras import backend"
 pip install -r ./requirements/requirements.txt
+# You may have to install pandas seperately from pip, haven't fixed this yet
 
 #  Setup jupyter notebook to run remotely
 ipython
